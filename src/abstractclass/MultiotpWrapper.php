@@ -1,14 +1,14 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\abstractclass;
+namespace rhossis\core\application\authentication\UserCredential\abstractclass;
 
-use cymapgt\Exception\UserCredentialException;
+use rhossis\Exception\UserCredentialException;
 
 /**
  * Wrapper for Multiotp library to enhance the TOTP functionality
  * TODO: delegate work of authentication to Multiotp when they release the SOAP web service
  *
  * @category    security
- * @package     cymapgt.core.application.authentication.UserCredential
+ * @package     rhossis.core.application.authentication.UserCredential
  * @copyright   Copyright (c) 2016 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract

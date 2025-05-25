@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
-  <dir name="/home/rhossis/NetBeansProjects/cymapgt/core/application/authentication/UserCredential/src">
+  <dir name="/home/rhossis/NetBeansProjects/rhossis/core/application/authentication/UserCredential/src">
     <dir name="services">
       <file name="UserCredentialPasswordLoginService.php" size="7770" time="2015-07-18T02:42:32+03:00" unixtime="1437176552" sha1="5a4d365495f9d75908c51dd545286ce438fa145b" xml="tokens/services/UserCredentialPasswordLoginService.php.xml"/>
     </dir>

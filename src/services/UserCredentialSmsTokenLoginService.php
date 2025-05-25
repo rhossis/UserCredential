@@ -1,7 +1,7 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\services;
+namespace rhossis\core\application\authentication\UserCredential\services;
 
-use cymapgt\Exception\UserCredentialException;
+use rhossis\Exception\UserCredentialException;
 
 /**
  * UserCredentialSmsTotpLoginService
@@ -9,7 +9,7 @@ use cymapgt\Exception\UserCredentialException;
  * and second stage being SMS based TOTP authentication
  *
  * @category    
- * @package     cymapgt.core.application.authentication.UserCredential.services
+ * @package     rhossis.core.application.authentication.UserCredential.services
  * @copyright   Copyright (c) 2015 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract

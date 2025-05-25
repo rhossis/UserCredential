@@ -1,16 +1,16 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\services;
+namespace rhossis\core\application\authentication\UserCredential\services;
 
-use cymapgt\Exception\UserCredentialException;
-use cymapgt\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationInterface;
-use cymapgt\core\application\authentication\UserCredential\traits\UserCredentialAuthenticationTrait;
+use rhossis\Exception\UserCredentialException;
+use rhossis\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationInterface;
+use rhossis\core\application\authentication\UserCredential\traits\UserCredentialAuthenticationTrait;
     
 /**
  * UserCredentialPasswordLoginService
  * This service creates password hashes using the BCRYPT cipher
  *
  * @category    
- * @package     cymapgt.core.application.authentication.UserCredential.services
+ * @package     rhossis.core.application.authentication.UserCredential.services
  * @copyright   Copyright (c) 2014 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract
@@ -125,7 +125,7 @@ class UserCredentialPasswordLoginService implements UserCredentialAuthentication
     /**
      * function setMultiFactorHandler - Provide namespace of the multi factor handler service,
      *                                  which has to implement the interface
-     *                                  cymapgt\core\application\authentication\abstractclass\UserCredentialAuthenticationMultiFactorInterface
+     *                                  rhossis\core\application\authentication\abstractclass\UserCredentialAuthenticationMultiFactorInterface
      *
      * Cyril Ogana <cogana@gmail.com> - 2014-02-13
      * 

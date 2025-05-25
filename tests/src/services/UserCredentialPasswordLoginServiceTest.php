@@ -1,8 +1,8 @@
 <?php
 
-namespace cymapgt\core\application\authentication\UserCredential\services;
+namespace rhossis\core\application\authentication\UserCredential\services;
 
-use cymapgt\core\application\authentication\UserCredential\abstractclass\MultiotpWrapper;
+use rhossis\core\application\authentication\UserCredential\abstractclass\MultiotpWrapper;
 use JJG\Ping;
 
 /**
@@ -49,7 +49,7 @@ class UserCredentialPasswordLoginServiceTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::initialize
+     * @covers rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::initialize
      */
     public function testInitialize() {
         //username of authenticating user
@@ -66,10 +66,10 @@ class UserCredentialPasswordLoginServiceTest extends \PHPUnit\Framework\TestCase
     }
     
     /**
-     * @covers cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::initialize
+     * @covers rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::initialize
      */
     public function testInitializeException() {
-        $this->expectException('\cymapgt\Exception\UserCredentialException');
+        $this->expectException('\rhossis\Exception\UserCredentialException');
         $this->expectExceptionMessage('The usercredential login service is not initialized with all parameters');
         
         //if you call initialize without setting the username, password and keyed in password, an exception should be thrown
@@ -77,7 +77,7 @@ class UserCredentialPasswordLoginServiceTest extends \PHPUnit\Framework\TestCase
     } 
 
     /**
-     * @covers cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
+     * @covers rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
      */
     public function testAuthenticateNative() {
         //test authentication where user has input the correct password
@@ -94,10 +94,10 @@ class UserCredentialPasswordLoginServiceTest extends \PHPUnit\Framework\TestCase
     /**
      * This tests that without proper initialization of LDAP settings, a UserCredentialException will be thrown. 
      * 
-     * @covers cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
+     * @covers rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
      */
     public function testInitializeLdapException() {
-        $this->expectException('\cymapgt\Exception\UserCredentialException');
+        $this->expectException('\rhossis\Exception\UserCredentialException');
         $this->expectExceptionMessage('The LDAP feature of the usercredential login service is not initialized with all parameters');
                 
         $this->object->setPasswordAuthenticationPlatform(\USERCREDENTIAL_PASSWORDLOGINPLATFORM_LDAP);
@@ -111,7 +111,7 @@ class UserCredentialPasswordLoginServiceTest extends \PHPUnit\Framework\TestCase
      * LDAP settings must be initialized, then authentication can proceed. The below example uses the MultiOTP
      * LDAP auth functionality. If the remote LDAP configured cannot be pinged, this test will be skipped
      * 
-     * @covers cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
+     * @covers rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService::authenticate
      */
     public function testAuthenticateLdap() {
         //the LDAP server

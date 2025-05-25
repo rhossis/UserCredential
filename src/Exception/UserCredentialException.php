@@ -1,5 +1,5 @@
 <?php
-namespace cymapgt\Exception;
+namespace rhossis\Exception;
 
 use Exception;
 

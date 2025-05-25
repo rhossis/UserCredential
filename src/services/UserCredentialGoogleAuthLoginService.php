@@ -1,8 +1,8 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\services;
+namespace rhossis\core\application\authentication\UserCredential\services;
 
-use cymapgt\Exception\UserCredentialException;
-use cymapgt\core\application\authentication\UserCredential\abstractclass\MultiotpWrapper;
+use rhossis\Exception\UserCredentialException;
+use rhossis\core\application\authentication\UserCredential\abstractclass\MultiotpWrapper;
 
 /**
  * UserCredentialGoogleAuthLoginService
@@ -11,7 +11,7 @@ use cymapgt\core\application\authentication\UserCredential\abstractclass\Multiot
  * https://github.com/google/google-authenticator
  *
  * @category    
- * @package     cymapgt.core.application.authentication.UserCredential.services
+ * @package     rhossis.core.application.authentication.UserCredential.services
  * @copyright   Copyright (c) 2016 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract

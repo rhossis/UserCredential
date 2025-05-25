@@ -1,7 +1,7 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\abstractclass;
+namespace rhossis\core\application\authentication\UserCredential\abstractclass;
 
-use cymapgt\Exception\UserCredentialException;
+use rhossis\Exception\UserCredentialException;
 use Phpass\Strength;
 
 /**
@@ -9,7 +9,7 @@ use Phpass\Strength;
  * 2 factor authentication using TOTP
  *
  * @category    security
- * @package     cymapgt.core.application.authentication.UserCredential
+ * @package     rhossis.core.application.authentication.UserCredential
  * @copyright   Copyright (c) 2015 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract

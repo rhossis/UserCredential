@@ -17,7 +17,7 @@ the SMS OTP and Google Authenticator TOTP services that we have provided with th
 
 ### Install application via Composer
 
-    require "cymapgt/usercredential": "*"
+    require "rhossis/usercredential": "*"
 
 ## Usage
 
@@ -171,7 +171,7 @@ which performs the first step of the authentication.
 
 #### Enforcing Password Policy After Authenticating
 
-    use cymapgt\core\application\authentication\UserCredential;
+    use rhossis\core\application\authentication\UserCredential;
     //Build user Profile First (see sample above)
 
     $userCredentialService = new UserCredentialManager($userProfile);
@@ -206,7 +206,7 @@ that the 45 days have elapsed and throw exception requiring password change
 
 The strength checker method is static, to allow for usage without needing instantiation of the UserCredentialManager class. Thus, it can also be used in assisting users when they are changing passwords or setting up new passwords.
 
-    use cymapgt\core\application\authentication\UserCredential; 
+    use rhossis\core\application\authentication\UserCredential; 
         
     $passwordStrength = UserCredentialManager::passwordStrength($passwordString);
  

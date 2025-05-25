@@ -1,14 +1,14 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\abstractclass;
+namespace rhossis\core\application\authentication\UserCredential\abstractclass;
 
-use cymapgt\Exception\UserCredentialException;
+use rhossis\Exception\UserCredentialException;
 
 /**
  * UserCredentialAuthenticationInterface
  * Interface that will be used by the Login Services
  *
  * @category    
- * @package     cymapgt.core.application.authentication.UserCredential
+ * @package     rhossis.core.application.authentication.UserCredential
  * @copyright   Copyright (c) 2014 Cymap
  * @author      Cyril Ogana <cogana@gmail.com>
  * @abstract
@@ -78,7 +78,7 @@ interface UserCredentialAuthenticationInterface
     
     /**
      * Provide namespace of the multi factor handler service,which has to implement the interface
-     * cymapgt\core\application\authentication\abstractclass\UserCredentialAuthenticationMultiFactorInterface
+     * rhossis\core\application\authentication\abstractclass\UserCredentialAuthenticationMultiFactorInterface
      *                                  
      * Cyril Ogana <cogana@gmail.com> - 2014-02-13
      * 

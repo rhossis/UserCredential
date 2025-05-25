@@ -8,16 +8,16 @@
             "lib/Multiotp/multiotp.class.php"
         ],
         "psr-4" : {
-            "cymapgt\\Exception\\" : "src/Exception",
-            "cymapgt\\core\\application\\authentication\\UserCredential\\" : "src"
+            "rhossis\\Exception\\" : "src/Exception",
+            "rhossis\\core\\application\\authentication\\UserCredential\\" : "src"
         }
     },
     "autoload-dev" : {
         "psr-4" : {
-            "cymapgt\\core\\application\\authentication\\UserCredential\\tests\\" : "tests"
+            "rhossis\\core\\application\\authentication\\UserCredential\\tests\\" : "tests"
         }
     },
-    "name" : "cymapgt/usercredential",
+    "name" : "rhossis/usercredential",
     "type" : "library",
     "description" : "Package for Password authentication policy management",
     "license" : "BSD-3-clause",
@@ -32,13 +32,13 @@
     },
     "support" : {
         "email" : "cogana@gmail.com",
-        "source" : "https://github.com/cymapgt/UserCredential"
+        "source" : "https://github.com/rhossis/UserCredential"
     },
     "authors" : [{
         "name" : "Cyril Ogana",
         "email" : "cogana@gmail.com",
-        "homepage" : "http://www.cymapk.com",
+        "homepage" : "http://www.github.com/rhossis",
         "role" : "Maintainer"        
     }],
-    "homepage" : "https://github.com/cymapgt/UserCredential"
+    "homepage" : "https://github.com/rhossis/UserCredential"
 }

@@ -1,8 +1,8 @@
 <?php
-namespace cymapgt\core\application\authentication\UserCredential\abstractclass;
+namespace rhossis\core\application\authentication\UserCredential\abstractclass;
 
 use FreeDSx\Ldap;
-use cymapgt\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService;
+use rhossis\core\application\authentication\UserCredential\services\UserCredentialPasswordLoginService;
 
 
 /**
@@ -67,7 +67,7 @@ class UserCredentialAuthenticationTraitTest extends \PHPUnit\Framework\TestCase
     }
     
     /**
-     * @covers cymapgt\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationTrait::authenticate
+     * @covers rhossis\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationTrait::authenticate
      */
     public function testAuthenticationNative() {
         $authenticationPlatform = \USERCREDENTIAL_PASSWORDLOGINPLATFORM_NATIVE;
@@ -77,7 +77,7 @@ class UserCredentialAuthenticationTraitTest extends \PHPUnit\Framework\TestCase
     }
     
     /**
-     * @covers cymapgt\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationTrait::authenticate
+     * @covers rhossis\core\application\authentication\UserCredential\abstractclass\UserCredentialAuthenticationTrait::authenticate
      */
     public function testAuthenticationLdap() {
         $authenticationPlatform = \USERCREDENTIAL_PASSWORDLOGINPLATFORM_LDAP;
